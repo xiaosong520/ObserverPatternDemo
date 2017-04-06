@@ -22,5 +22,4 @@ public class Person implements Observer {
         tv.setText(tv.getText()+name+":"+ msg +"\n");
     }
 
-
 }

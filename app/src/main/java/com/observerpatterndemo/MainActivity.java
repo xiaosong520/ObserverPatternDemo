@@ -39,17 +39,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initEvent() {
-
-        //创建被观察者
+        //创建被观察者(具体主题)
         mSubject = new XiaosongSubject();
-
     }
 
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btn_add_one:
+            case R.id.btn_add_one://注册观察者 小明
                 if (pMing==null){
                     pMing = new Person("小明");
                     mSubject.attach(pMing);
@@ -59,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
 
-            case R.id.btn_add_two:
+            case R.id.btn_add_two://注册观察者 小琴
                 if (pQing==null){
                     pQing = new Person("小琴");
                     mSubject.attach(pQing);
@@ -69,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
 
-            case R.id.btn_add_three:
+            case R.id.btn_add_three://注册观察者 阿亮
                 if (pLiang==null){
                     pLiang = new Person("阿亮");
                     mSubject.attach(pLiang);
@@ -79,23 +77,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
 
-            case R.id.btn_notify:
+            case R.id.btn_notify://主题(被观察者)更新了内容，通知所有观察者
                 tv_output.setText("");
                 mSubject.notify("小嵩更新微博啦~ 快来看看吧", tv_output);
                 break;
 
-            case R.id.btn_delete:
+            case R.id.btn_delete://注销观察者 小明
                 if (pMing!=null){
                     mSubject.detach(pMing);
                     pMing = null;
                 }
 
-                if (pQing!=null){
+                if (pQing!=null){//注销观察者 小琴
                     mSubject.detach(pQing);
                     pQing = null;
                 }
 
-                if (pLiang!=null){
+                if (pLiang!=null){//注销观察者 阿亮
                     mSubject.detach(pLiang);
                     pLiang = null;
                 }
