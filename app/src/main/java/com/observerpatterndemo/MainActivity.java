@@ -82,8 +82,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mSubject.notify("小嵩更新微博啦~ 快来看看吧", tv_output);
                 break;
 
-            case R.id.btn_delete://注销观察者 小明
-                if (pMing!=null){
+            case R.id.btn_delete://注销
+
+                if (pMing!=null){//注销观察者 小明
                     mSubject.detach(pMing);
                     pMing = null;
                 }
