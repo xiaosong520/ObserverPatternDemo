@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="粉丝在微博客户端的操作:"/>
+    <Button
+        android:id="@+id/btn_add_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="小明关注我"/>
+     <Button
+        android:id="@+id/btn_add_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="小琴关注我"/>
+    <Button
+        android:id="@+id/btn_add_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="阿亮关注我"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="我在微博客户端的操作:"/>
+
+  <Button
+      android:id="@+id/btn_notify"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="我更新微博"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除关注我的人"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="谁接收到了通知："/>
+
+    <TextView
+        android:id="@+id/tv_output"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
