@@ -1,7 +1,7 @@
 # ObserverPatternDemo
 观察者模式的示例代码
 
-### [CSDN博客文章地址](http://blog.csdn.net/ls5718/article/details/52563959)
+### [CSDN博客文章地址](https://blog.csdn.net/qq_22393017/article/details/69371932)
 
 ### 效果图
 
